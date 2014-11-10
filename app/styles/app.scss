@@ -1,0 +1,42 @@
+@import "reset.scss";
+
+html, body {
+  background-color: black;
+  color: white;
+  font-family: "Helvetica";
+}
+
+body {
+  margin: 5%;
+}
+
+h1 {
+  font-size: 3em;
+  border-bottom: 0.1em solid #999;
+}
+
+button.tv-button {
+  outline:none;
+  font-size: 4em;
+  width: 100%;
+  margin-top: 0.2em;
+  background-color: black;
+  color: white;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  border: 0;
+
+  &:focus {
+    box-shadow: 1px 1px 20px #1e5799;
+    border: 0;
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1e5799 0%, #207cca 9%, #050203 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(9%,#207cca), color-stop(100%,#050203)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #1e5799 0%,#207cca 9%,#050203 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #1e5799 0%,#207cca 9%,#050203 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #1e5799 0%,#207cca 9%,#050203 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #1e5799 0%,#207cca 9%,#050203 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#050203',GradientType=0 ); /* IE6-9 */
+
+  }
+}
+
