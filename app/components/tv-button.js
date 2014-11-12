@@ -5,7 +5,11 @@ export default RemoteTarget.extend({
   tagName: 'button',
 
   click: function() {
-    this.sendAction('action', this.get('param'));
+    this.sendAction('clickAction', this.get('item'));
+  },
+
+  focusIn: function() {
+    this.sendAction('hoverAction', this.get('item'));
   },
 
   render: function(buffer) {

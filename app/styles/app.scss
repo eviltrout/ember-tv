@@ -15,16 +15,43 @@ h1 {
   border-bottom: 0.1em solid #999;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30em;
+}
+
+.segment {
+  width: 50%;
+}
+.segment-top {
+  align-self: flex-start;
+}
+
+.preview {
+  text-align: center;
+}
+.preview img {
+  margin-top: 1em;
+  width: 70%;
+}
+
+.cat {
+  text-align: center;
+  margin: 1em 0;
+}
+
 button.tv-button {
   outline:none;
-  font-size: 4em;
-  width: 100%;
+  font-size: 3em;
   margin-top: 0.2em;
   background-color: black;
   color: white;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   border: 0;
   text-align: left;
+  width: 100%;
 
   &:focus {
     box-shadow: 1px 1px 20px #1e5799;

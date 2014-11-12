@@ -1,5 +1,5 @@
 import Pretender from 'pretender';
-import tree from 'ember-tv/fixtures/tree';
+import tree from 'ember-tv/tree';
 
 export default {
   name: 'pretend-server',

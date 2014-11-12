@@ -1,9 +1,32 @@
-<h1>{{name}}</h1>
+<h1>{{liquid-bind name use="toUp"}}</h1>
 
-{{#if parent}}
-  {{tv-button action="showItem" param=parent label="(back)"}}
-{{/if}}
 
-{{#each children}}
-  {{tv-button action="showItem" param=this label=name}}
-{{/each}}
+  {{#if children}}
+    <div class='menu'>
+      <div class='segment segment-top'>
+        {{#if parent}}
+          {{tv-button clickAction="showItem"
+                      hoverAction="clearPreview"
+                      item=parent label=".."}}
+        {{/if}}
+
+        {{#each children}}
+          {{tv-button clickAction="showItem"
+                      hoverAction="previewItem"
+                      item=this
+                      label=name}}
+        {{/each}}
+      </div>
+
+      <div class='segment'>
+        <div class='preview'>
+          {{#if previewItem.image}}
+            <img {{bind-attr src=previewItem.image}}>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  {{else}}
+    <div class='cat'><img src="/assets/images/cat.gif"></div>
+    {{tv-button clickAction="showItem" item=parent label="Go Back"}}
+  {{/if}}
