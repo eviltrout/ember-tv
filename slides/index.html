@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(/vendor/yan.css);
+      @import url(/vendor/droid.css);
+      @import url(/vendor/ubuntu.css);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Ember at 10ft
+## @eviltrout
+## http://eviltrout.com
+---
+class: center, middle
+
+# A Little History
+---
+class: center, middle
+
+## "The Internet became interesting in the 90s"
+## - me
+---
+class: center, middle
+
+# Packet Switching
+## a.k.a I don't care what you're sending
+---
+class: center, middle
+
+# Packet Switching
+## IP is Platform Agnostic
+---
+class: center, middle
+
+# The Problem
+## Applications were platform specific
+---
+class: center, middle
+
+# The Dream
+## Unviersal Applications
+---
+class: center, middle
+
+# Java
+## Scared the Hell out of Microsoft
+---
+class: center, middle
+
+# JavaScript
+## The Batman of Platforms
+---
+class: center, middle
+
+# Single Page Applications
+## Not a fan of this label
+---
+class: center, middle
+
+# Browser Applications
+---
+class: center, middle
+
+# History Repeats Itself
+## Many still prefer server side rendering
+---
+class: center, middle
+
+# What kind of app *aren't* you building?
+---
+# Examples of Browser Applications
+
+* Social: Gmail, Slack, Discourse
+
+* Games: A dark room, 2048
+
+* Video: Vime, Twitch
+
+* Creative: Atom.io
+---
+# Browsers are **Everywhere**
+
+* Desktop
+
+* Mobile
+
+* Tablets
+
+* TVs
+
+* Wearables
+---
+# The Theory
+
+* Ember is great for writing browser applications
+
+* A TV can run a browser application
+
+* Ember is great for writing TV applications
+---
+# How to Run it?
+
+* Laptop or Desktop hooked up to TV
+
+* Cheaper options like Chromecast
+---
+# How are TV applications made?
+
+* Most are native for their set top boxes
+
+* Best case use an App Store model for delivery
+---
+class: center, middle
+
+# Why?
+## URLs &amp; The Refresh Test
+---
+class: center, middle
+
+# CSS is Easy!
+## (finally)
+---
+class: center, middle
+
+# Easy Distribution
+---
+class: center, middle
+
+# Multi-Platform
+---
+class: center, middle
+
+# Demo Time!
+---
+# How-To in Ember
+
+* `ember new tv-app`
+
+* Use large fonts + full screen CSS
+
+* Create routes for your application's state
+---
+# Accepting Remote Control Input
+
+* Just think of them as keyboard commands
+
+* We can use focus events to select controls
+
+* But what about directional input?
+---
+# Ember Components to the Rescue
+
+* Use a base class `RemoteTarget`
+
+* Listen for Keyboard events in `ApplicationView`
+
+* Find the closest `RemoteTarget`
+
+* Call `focus()` on it
+---
+# Build up Widgets
+
+* Demo app has a list of `{{tv-button}}`s
+---
+# Other fun Stuff
+
+* Liquid Fire for Animations
+
+* Web Audio for navigation sounds
+---
+class: center, middle
+
+# That's really all there is to it!
+---
+class: center, middle
+
+# Ember Made this Easy
+## Go crazy building stuff!
+---
+class: center, middle
+
+# Demo App Source Code
+
+##http://github.com/eviltrout/ember-tv
+---
+class: center, middle
+
+# Thanks!
+## @eviltrout
+## http://eviltrout.com
+    </textarea>
+    <script src="/vendor/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
+
