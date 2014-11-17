@@ -10,9 +10,9 @@ Here's an [online demo](http://embertv.eviltrout.com) of the project if you're c
 It was originally created for a talk given by [eviltrout](http://eviltrout.com)
 at the [Embergarten Symposium](https://unspace.ca/embergarten/).
 
-The slides for the talk are in the `slides` folder, however the 'nodes.md'
-file might be a lot more informative than the slides as they're much closer
-to what was said :)
+The slides for the talk are in the [slides](https://github.com/eviltrout/ember-tv/tree/master/slides)
+folder, however the [nodes.md](https://github.com/eviltrout/ember-tv/blob/master/slides/notes.md) file
+might be a lot more informative than the slides as they're much closer to what was said :)
 
 ## LICENSE
 
