@@ -14,6 +14,19 @@ The slides for the talk are in the [slides](https://github.com/eviltrout/ember-t
 folder, however the [nodes.md](https://github.com/eviltrout/ember-tv/blob/master/slides/notes.md) file
 might be a lot more informative than the slides as they're much closer to what was said :)
 
+## Getting Started
+
+ember-tv is a standard [ember-cli](http://www.ember-cli.com/) project. 
+
+To get started:
+
+1. Check out the project
+2. `npm install`
+3. `bower install`
+4. `ember serve`
+
+And you're off to the races!
+
 ## LICENSE
 
 The images are borrowed from the XBMC project and are available under
